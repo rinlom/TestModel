@@ -15,7 +15,7 @@ const books = require('./data')
 app.get('/api', (req, res) => {
   res.json(books)
 })
-app.post('/books', (req, res) => {
+app.post('/api', (req, res) => {
   books.push(req.body)
   res.status(201).json(req.body)
 })
